@@ -8,6 +8,9 @@
 <body>
     Filter products:<br>
     <input type="text" ng-model="nameFilter">
-    {{nameFilter}}
+    {{nameFilter}}<br>
+    <ul ng-init="products=['Prod 1','Prod 2','Prod 3']">
+        <li ng-repeat="product in products">{{product}}</ling>
+    </ul>
 </body>
 </html>
